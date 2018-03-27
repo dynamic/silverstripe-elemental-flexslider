@@ -12,7 +12,6 @@
     "keywords": [
         "silverstripe", "elemental", "blocks", "dynamic"
     ],
-    "type": "silverstripe-module",
     "license": "BSD-3-Clause",
     "require": {
         "silverstripe/recipe-cms": "^1.0@dev",
