@@ -1,5 +1,6 @@
 {
     "name": "dynamic/silverstripe-elemental-flexslider",
+    "type": "silverstripe-vendormodule",
     "description": "Flexslider slideshow content block for SilverStripe Elemental",
     "authors": [
         {
@@ -9,7 +10,7 @@
         }
     ],
     "keywords": [
-        "silverstripe"
+        "silverstripe", "elemental", "blocks", "dynamic"
     ],
     "type": "silverstripe-module",
     "license": "BSD-3-Clause",
