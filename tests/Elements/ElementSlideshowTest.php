@@ -2,7 +2,7 @@
 
 namespace Dynamic\ElementalFlexslider\Test;
 
-use Dynamic\Elements\Elements\ElementSlideshow;
+use Dynamic\ElementalFlexslider\Elements\ElementSlideshow;
 use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Dev\SapphireTest;
 use SilverStripe\Forms\FieldList;
