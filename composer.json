@@ -14,7 +14,9 @@
     "type": "silverstripe-module",
     "license": "BSD-3-Clause",
     "require": {
-        "silverstripe/recipe-cms": "^1.0@dev"
+        "silverstripe/recipe-cms": "^1.0@dev",
+        "dnadesign/silverstripe-elemental": "^2@dev",
+        "dynamic/flexslider": "^3.0@dev"
     },
     "require-dev": {
         "phpunit/PHPUnit": "^5.7"
