@@ -6,6 +6,12 @@ use DNADesign\Elemental\Models\BaseElement;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\FieldType\DBField;
 
+/**
+ * Class ElementSlideshow
+ * @package Dynamic\Elements\Flexslider\Elements
+ *
+ * @property string Content
+ */
 class ElementSlideshow extends BaseElement
 {
     /**
@@ -46,7 +52,7 @@ class ElementSlideshow extends BaseElement
     }
 
     /**
-     * @return HTMLText
+     * @return \SilverStripe\ORM\FieldType\DBHTMLText
      */
     public function ElementSummary()
     {
