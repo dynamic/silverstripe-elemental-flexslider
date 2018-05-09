@@ -1,8 +1,8 @@
 <?php
 
-namespace Dynamic\ElementalFlexslider\ORM;
+namespace Dynamic\Elements\Flexslider\ORM;
 
-use Dynamic\ElementalFlexslider\Elements\ElementSlideshow;
+use Dynamic\Elements\Flexslider\Elements\ElementSlideshow;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\DataExtension;
 

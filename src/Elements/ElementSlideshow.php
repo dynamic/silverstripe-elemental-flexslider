@@ -1,6 +1,6 @@
 <?php
 
-namespace Dynamic\ElementalFlexslider\Elements;
+namespace Dynamic\Elements\Flexslider\Elements;
 
 use DNADesign\Elemental\Models\BaseElement;
 use SilverStripe\Forms\FieldList;

@@ -33,8 +33,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Dynamic\\ElementalFlexslider\\": "src/",
-            "Dynamic\\ElementalFlexslider\\Test\\": "tests/"
+            "Dynamic\\Elements\\Flexslider\\": "src/",
+            "Dynamic\\Elements\\Flexslider\\Test\\": "tests/"
         }
     },
     "minimum-stability": "dev",

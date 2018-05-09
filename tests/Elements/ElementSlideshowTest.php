@@ -1,8 +1,8 @@
 <?php
 
-namespace Dynamic\ElementalFlexslider\Test;
+namespace Dynamic\Elements\Flexslider\Test\Elements;
 
-use Dynamic\ElementalFlexslider\Elements\ElementSlideshow;
+use Dynamic\Elements\Flexslider\Elements\ElementSlideshow;
 use SilverStripe\Core\Injector\Injector;
 use SilverStripe\Dev\SapphireTest;
 use SilverStripe\Forms\FieldList;
@@ -19,8 +19,8 @@ class ElementSlideshowTest extends SapphireTest
      */
     public function testGetCMSFields()
     {
-        $promo = Injector::inst()->create(ElementSlideshow::class);
-        $this->assertInstanceOf(FieldList::class, $promo->getCMSFields());
+        $object = $this->objFromFixture(ElementSlideshow::class, 'one');
+        $this->assertInstanceOf(FieldList::class, $object->getCMSFields());
     }
 
     /**

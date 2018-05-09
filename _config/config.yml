@@ -1,10 +1,10 @@
 ---
 Name: silverstripeelemental-slideshowconfig
 ---
-Dynamic\ElementalFlexslider\Elements\ElementSlideshow:
+Dynamic\Elements\Flexslider\Elements\ElementSlideshow:
   extensions:
     - Dynamic\FlexSlider\ORM\FlexSlider
 
 Dynamic\FlexSlider\Model\SlideImage:
   extensions:
-    - Dynamic\ElementalFlexslider\ORM\ElementSlideshowSlideDataExtension
+    - Dynamic\Elements\Flexslider\ORM\ElementSlideshowSlideDataExtension
