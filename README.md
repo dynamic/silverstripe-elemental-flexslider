@@ -15,12 +15,23 @@ Slideshow content block for SilverStripe Elemental
 
 ## Requirements
 
-- SilverStripe 4.0
+* SilverStripe ^4.0
+* SilverStripe Elemental ^2.0
+* Dynamic Flexslider ^3.0
 
 ## Installation
 
 `composer require dynamic/silverstripe-elemental-flexslider`
 
-## Documentation
+## Example usage
 
-See the [docs/en](docs/en/index.md) folder.
+A block to display a Flexslider slideshow on your page. Image, headline, description and link.
+
+## Getting more elements
+
+See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#included-blocks)
+
+## Configuration
+
+See [SilverStripe Elemental Configuration](https://github.com/dnadesign/silverstripe-elemental#configuration)
+
