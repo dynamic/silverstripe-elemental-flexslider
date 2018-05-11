@@ -51,6 +51,13 @@ A block to display a Flexslider slideshow on your page. Image, headline, descrip
 #### CMS - Slideshow Element - Slide Add/Edit
 ![CMS - Slideshow Element - Slide Add/Edit](./readme-images/slideshow-block-cms-slide.jpg)
 
+## Legacy migration
+
+If you have a site using a version of this block older than 1.0.0-beta4, you will need to use the following tool to update the namespace of your records:
+
+See [Dynamic Elemental Blocks Migrator](https://github.com/dynamic/dynamic-elemental-blocks-migrator) 
+
+
 ## Getting more elements
 
 See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#included-blocks)
