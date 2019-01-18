@@ -26,10 +26,11 @@ class ElementSlideshowTest extends SapphireTest
     /**
      *
      */
-    public function testGetElementSummary()
+    public function testGetSummary()
     {
         $object = $this->objFromFixture(ElementSlideshow::class, 'one');
-        $this->assertEquals($object->ElementSummary(), $object->dbObject('Content')->Summary(20));
+        $result = $object->Slides()->count() . ' slide';
+        $this->assertEquals($object->getSummary(), $result);
     }
 
     /**

@@ -41,6 +41,18 @@ class ElementSlideshow extends BaseElement
         'Content' => 'HTMLText',
     ];
 
+    /**
+     * Set to false to prevent an in-line edit form from showing in an elemental area. Instead the element will be
+     * clickable and a GridFieldDetailForm will be used.
+     *
+     * @config
+     * @var bool
+     */
+    private static $inline_editable = false;
+
+    /**
+     * @return FieldList
+     */
     public function getCMSFields()
     {
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
@@ -54,9 +66,24 @@ class ElementSlideshow extends BaseElement
     /**
      * @return \SilverStripe\ORM\FieldType\DBHTMLText
      */
-    public function ElementSummary()
+    public function getSummary()
     {
-        return DBField::create_field('HTMLText', $this->Content)->Summary(20);
+        if ($this->Slides()->count() == 1) {
+            $slide = ' slide';
+        } else {
+            $slide = ' slides';
+        }
+        return DBField::create_field('HTMLText', $this->Slides()->count() . $slide)->Summary(20);
+    }
+
+    /**
+     * @return array
+     */
+    protected function provideBlockSchema()
+    {
+        $blockSchema = parent::provideBlockSchema();
+        $blockSchema['content'] = $this->getSummary();
+        return $blockSchema;
     }
 
     /**
