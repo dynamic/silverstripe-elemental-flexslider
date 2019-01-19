@@ -17,7 +17,7 @@ class ElementSlideshow extends BaseElement
     /**
      * @var string
      */
-    private static $icon = 'slideshow-icon';
+    private static $icon = 'font-icon-block-carousel';
 
     /**
      * @var string
