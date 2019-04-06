@@ -51,13 +51,19 @@ class ElementSlideshow extends BaseElement
     private static $inline_editable = false;
 
     /**
+     * @var string
+     */
+    private static $slide_tab_title = 'Main';
+
+    /**
      * @return FieldList
      */
     public function getCMSFields()
     {
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
             $fields->dataFieldByName('Content')
-                ->setRows(8);
+                ->setRows(8)
+                ->setTitle('Description');
         });
 
         return parent::getCMSFields();
