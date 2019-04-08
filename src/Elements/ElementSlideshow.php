@@ -3,6 +3,7 @@
 namespace Dynamic\Elements\Flexslider\Elements;
 
 use DNADesign\Elemental\Models\BaseElement;
+use Dynamic\FlexSlider\Model\SlideImage;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\FieldType\DBField;
 
@@ -18,16 +19,6 @@ class ElementSlideshow extends BaseElement
      * @var string
      */
     private static $icon = 'font-icon-block-carousel';
-
-    /**
-     * @var string
-     */
-    private static $singular_name = 'Flexslider Element';
-
-    /**
-     * @var string
-     */
-    private static $plural_name = 'Flexslider Elements';
 
     /**
      * @var string
@@ -56,6 +47,19 @@ class ElementSlideshow extends BaseElement
     private static $slide_tab_title = 'Main';
 
     /**
+     * @param bool $includerelations
+     * @return array
+     */
+    public function fieldLabels($includerelations = true)
+    {
+        $labels = parent::fieldLabels($includerelations);
+
+        $labels['Content'] = _t(__CLASS__.'.ContentLabel', 'Description');
+
+        return $labels;
+    }
+
+    /**
      * @return FieldList
      */
     public function getCMSFields()
@@ -63,8 +67,7 @@ class ElementSlideshow extends BaseElement
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
             $fields->dataFieldByName('Content')
                 ->setRows(5)
-                ->setTitle('Description')
-                ->setDescription('optional. Add introductory copy to your slideshow.');
+                ->setDescription(_t(__CLASS__ . '.ContentDescription', 'optional. Add introductory copy to your slideshow.'));
         });
 
         return parent::getCMSFields();
@@ -75,12 +78,13 @@ class ElementSlideshow extends BaseElement
      */
     public function getSummary()
     {
-        if ($this->Slides()->count() == 1) {
-            $slide = ' slide';
-        } else {
-            $slide = ' slides';
-        }
-        return DBField::create_field('HTMLText', $this->Slides()->count() . $slide)->Summary(20);
+        $count = $this->Slides()->count();
+        $label = _t(
+            SlideImage::class . '.PLURALS',
+            '{count} Slide|{count} Slides',
+            [ 'count' => $count ]
+        );
+        return DBField::create_field('HTMLText', $label)->Summary(20);
     }
 
     /**

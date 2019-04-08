@@ -1,0 +1,12 @@
+en:
+  Dynamic\Elements\Flexslider\Elements\ElementSlideshow:
+    BlockType: Slideshow
+    ContentDescription: 'optional. Add introductory copy to your slideshow.'
+    ContentLabel: Description
+    DESCRIPTION: 'Slideshow Elemnent powered by Flexslider'
+    PLURALNAME: Slideshow Elements
+    PLURALS:
+      one: 'A Slideshow'
+      other: '{count} Slideshows'
+    SINGULARNAME: Slideshow Element
+
