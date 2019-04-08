@@ -29,7 +29,7 @@ class ElementSlideshowTest extends SapphireTest
     public function testGetSummary()
     {
         $object = $this->objFromFixture(ElementSlideshow::class, 'one');
-        $result = $object->Slides()->count() . ' slide';
+        $result = 'A Slide Image';
         $this->assertEquals($object->getSummary(), $result);
     }
 
