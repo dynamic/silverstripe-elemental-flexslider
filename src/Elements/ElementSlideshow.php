@@ -67,7 +67,10 @@ class ElementSlideshow extends BaseElement
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
             $fields->dataFieldByName('Content')
                 ->setRows(5)
-                ->setDescription(_t(__CLASS__ . '.ContentDescription', 'optional. Add introductory copy to your slideshow.'));
+                ->setDescription(_t(
+                    __CLASS__ . '.ContentDescription',
+                    'optional. Add introductory copy to your slideshow.'
+                ));
         });
 
         return parent::getCMSFields();
