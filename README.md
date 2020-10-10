@@ -63,7 +63,7 @@ See [Dynamic Elemental Blocks Migrator](https://github.com/dynamic/dynamic-eleme
 
 ## Getting more elements
 
-See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#included-blocks)
+See [Elemental modules by Dynamic](https://github.com/dynamic?q=elemental)
 
 ## Configuration
 
