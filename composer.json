@@ -29,11 +29,6 @@
     "config": {
         "process-timeout": 600
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
-    },
     "autoload": {
         "psr-4": {
             "Dynamic\\Elements\\Flexslider\\": "src/",
