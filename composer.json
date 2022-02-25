@@ -14,6 +14,7 @@
     ],
     "license": "BSD-3-Clause",
     "require": {
+        "ext-zip": "*",
         "dnadesign/silverstripe-elemental": "^4.8",
         "dynamic/flexslider": "^4.0"
     },
