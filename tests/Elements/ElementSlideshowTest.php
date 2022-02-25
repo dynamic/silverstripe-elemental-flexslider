@@ -12,7 +12,7 @@ class ElementSlideshowTest extends SapphireTest
     /**
      * @var string
      */
-    protected static $fixture_file = '../fixtures.yml';
+    protected static $fixture_file = 'element-slideshow.yml';
 
     /**
      * Tests getCMSFields().
