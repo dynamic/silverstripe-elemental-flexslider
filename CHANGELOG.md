@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.1.0](https://github.com/dynamic/silverstripe-elemental-flexslider/tree/2.1.0) (2021-07-15)
+
+## What's Changed
+* Docs/readme update by @jsirish in https://github.com/dynamic/silverstripe-elemental-flexslider/pull/31
+* remove unused docs folder by @jsirish in https://github.com/dynamic/silverstripe-elemental-flexslider/pull/32
+* CI GitHub workflow initial by @jsirish in https://github.com/dynamic/silverstripe-elemental-flexslider/pull/33
+* README GitHub Actions badge by @jsirish in https://github.com/dynamic/silverstripe-elemental-flexslider/pull/34
+* REFACTOR PHP 8 and PHPUnit 9 compatability by @jsirish in https://github.com/dynamic/silverstripe-elemental-flexslider/pull/36
+* REFACTOR Composer - FlexSlider requirement to include 5.0 by @jsirish in https://github.com/dynamic/silverstripe-elemental-flexslider/pull/37
+
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-flexslider/compare/2.0.3...2.1.0
+
 ## [2.0.3](https://github.com/dynamic/silverstripe-elemental-flexslider/tree/2.0.3) (2020-10-09)
 
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-flexslider/compare/2.0.2...2.0.3)
