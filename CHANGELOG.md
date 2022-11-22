@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/dynamic/silverstripe-elemental-flexslider/tree/2.1.1) (2021-11-21)
+* CI remove travis, scrutinizer, branch alias by @jsirish in https://github.com/dynamic/silverstripe-elemental-flexslider/pull/38
+* BUGFIX template - update include path by @jsirish in https://github.com/dynamic/silverstripe-elemental-flexslider/pull/39
+
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-flexslider/compare/2.1.0...2.1.1
+
 ## [2.1.0](https://github.com/dynamic/silverstripe-elemental-flexslider/tree/2.1.0) (2021-07-15)
 
 ## What's Changed
