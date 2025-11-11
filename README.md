@@ -1,5 +1,7 @@
 # SilverStripe Elemental Flexslider
 
+[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
+
 Slideshow content block for SilverStripe Elemental
 
 ![CI](https://github.com/dynamic/silverstripe-elemental-flexslider/workflows/CI/badge.svg)
