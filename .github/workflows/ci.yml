@@ -62,10 +62,7 @@ jobs:
       - name: "Run tests with phpunit/phpunit"
         env:
           SS_DATABASE_PORT: ${{ job.services.mysql.ports['3306'] }}
-
-        uses: codecov/codecov-action@v1
-        with:
-          flags: unittests # optional
+        run: "vendor/bin/phpunit"
 
       - name: "Run tests with squizlabs/php_codesniffer"
         run: "vendor/bin/phpcs -s --report=summary --standard=phpcs.xml.dist --extensions=php,inc --ignore=autoload.php --ignore=vendor/ src/ tests/"
