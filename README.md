@@ -3,7 +3,7 @@
 Slideshow content block for SilverStripe Elemental
 
 ![CI](https://github.com/dynamic/silverstripe-elemental-flexslider/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-flexslider/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-flexslider)
+[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-flexslider/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-flexslider)
 [![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-elemental-flexslider/downloads)](https://packagist.org/packages/dynamic/silverstripe-elemental-flexslider)
