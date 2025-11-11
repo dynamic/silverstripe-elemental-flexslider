@@ -45,7 +45,6 @@ jobs:
         with:
           php-version: "${{ matrix.php-version }}"
           extensions: "${{ env.php_extensions }}"
-          coverage: "xdebug"
 
       - name: "Start mysql service"
         run: "sudo /etc/init.d/mysql start"
@@ -63,12 +62,9 @@ jobs:
       - name: "Run tests with phpunit/phpunit"
         env:
           SS_DATABASE_PORT: ${{ job.services.mysql.ports['3306'] }}
-        run: "vendor/bin/phpunit --coverage-clover=coverage.xml"
 
-      - name: "Upload coverage results to CodeCov"
         uses: codecov/codecov-action@v1
         with:
-          files: ./coverage.xml # optional
           flags: unittests # optional
 
       - name: "Run tests with squizlabs/php_codesniffer"
