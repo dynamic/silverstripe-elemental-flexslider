@@ -4,9 +4,9 @@ namespace Dynamic\Elements\Flexslider\ORM;
 
 use Dynamic\Elements\Flexslider\Elements\ElementSlideshow;
 use SilverStripe\Forms\FieldList;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 
-class ElementSlideshowSlideDataExtension extends DataExtension
+class ElementSlideshowSlideDataExtension extends Extension
 {
     /**
      * @var array

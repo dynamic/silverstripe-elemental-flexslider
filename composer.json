@@ -9,16 +9,23 @@
             "homepage": "https://www.dynamicagency.com"
         }
     ],
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/dynamic"
+        }
+    ],
     "keywords": [
         "silverstripe", "elemental", "blocks", "dynamic", "flexslider", "slideshow"
     ],
     "license": "BSD-3-Clause",
     "require": {
-        "dnadesign/silverstripe-elemental": "^4.8 || ^5",
-        "dynamic/flexslider": "^4.0 || ^5.0"
+        "dnadesign/silverstripe-elemental": "^6",
+        "dynamic/flexslider": "^6",
+        "silverstripe/vendor-plugin": "^3"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^2",
+        "silverstripe/recipe-testing": "^4",
         "squizlabs/php_codesniffer": "^3.0"
     },
     "config": {
@@ -39,7 +46,7 @@
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-            "dev-master": "2.x-dev"
+            "dev-master": "4.x-dev"
         }
     },
     "scripts": {
