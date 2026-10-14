@@ -2,5 +2,5 @@
 <% if $Content %><div class="element__content">$Content</div><% end_if %>
 
 <% if $SlideShow %>
-    <% include Dynamic\FlexSlider\FlexSlider %>
+    <% include FlexSlider %>
 <% end_if %>
