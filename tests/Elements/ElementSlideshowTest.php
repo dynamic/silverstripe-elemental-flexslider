@@ -41,4 +41,43 @@ class ElementSlideshowTest extends SapphireTest
         $object = $this->objFromFixture(ElementSlideshow::class, 'one');
         $this->assertEquals($object->getType(), 'Slideshow');
     }
+
+    /**
+     * A slideshow with slides renders the markup from dynamic/flexslider's
+     * templates/Includes/FlexSlider.ss.
+     */
+    public function testRenderIncludesFlexSlider()
+    {
+        $object = $this->objFromFixture(ElementSlideshow::class, 'one');
+        $this->assertTrue(
+            $object->getSlideShow()->exists(),
+            'Precondition: the fixture element has slides.'
+        );
+
+        $output = $object->forTemplate();
+
+        $this->assertStringContainsString('class="flexslider"', $output);
+        $this->assertStringContainsString('<ul class="slides">', $output);
+    }
+
+    /**
+     * A slideshow without slides renders its own content and skips the flexslider markup.
+     */
+    public function testRenderWithoutSlides()
+    {
+        $object = ElementSlideshow::create();
+        $object->Title = 'Empty slideshow';
+        $object->Content = '<p>Intro copy</p>';
+        $object->write();
+
+        $this->assertFalse(
+            $object->getSlideShow()->exists(),
+            'Precondition: the element has no slides.'
+        );
+
+        $output = $object->forTemplate();
+
+        $this->assertStringContainsString('Intro copy', $output);
+        $this->assertStringNotContainsString('class="flexslider"', $output);
+    }
 }
