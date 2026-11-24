@@ -2,6 +2,11 @@
 <ruleset name="SS4">
     <description>Coding standard for SilverStripe 4.x</description>
 
+    <!-- Directories to sniff. silverstripe/gha-ci runs `vendor/bin/phpcs` with no paths, -->
+    <!-- so the ruleset has to name them; see the `lint` composer script. -->
+    <file>src</file>
+    <file>tests</file>
+
     <!-- Don't sniff third party libraries -->
     <exclude-pattern>*/vendor/*</exclude-pattern>
     <exclude-pattern>*/thirdparty/*</exclude-pattern>
